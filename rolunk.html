@@ -6,9 +6,10 @@
     <title>QuickBite - Étel házhozszállítás</title>
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <link rel="stylesheet" href="assets/css/rolunk.css">
+   
 </head>
 <body>
-    <!-- Header -->
+    <!-- Fejléc -->
     <header>
         <div class="header-content">
             <div class="logo">
@@ -28,60 +29,84 @@
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Rólunk szekció -->
+    <section class="about-section container">
+        <h1 class="section-title gradient-title">A QuickBite-ról</h1>
+        <p class="subtitle">Kedvenc éttermeid, házhoz szállítva</p>
+        <div class="story-container">
+            <h2 class="section-subtitle">Történetünk</h2>
+            <p>A QuickBite egy egyszerű küldetéssel indult: összekötni az ételrajongókat kedvenc helyi éttermeikkel. Hiszünk abban, hogy a finom étel mindenkinek elérhető kell legyen — akár egy pihentető estén pizzára vágysz, akár egy gyors ebédre a munkanap közepén.</p>
+            <p>Ami egy kis projektként kezdődött, mára olyan platformmá nőtte ki magát, amely naponta több ezer vásárlót szolgál ki. Büszkék vagyunk rá, hogy a város legjobb éttermeivel dolgozunk együtt, és változatos konyhákat, kiváló gasztronómiai élményeket hozunk el otthonodba.</p>
+            <p>Elkötelezettek vagyunk a gyors és megbízható szolgáltatás mellett, miközben támogatjuk a helyi vállalkozásokat. Minden rendeléseddel segítesz az éttermeknek fejlődni, és hozzájárulsz a közösségek megerősödéséhez.</p>
+        </div>
+    </section>
 
-            <section class="about-section container">
-                <h1 class="section-title gradient-title">About QuickBite</h1>
-                <p class="subtitle">Your favorite restaurants, delivered to your doorstep</p>
-                <div class="story-container">
-                    <h2 class="section-subtitle">Our Story</h2>
-                    <p>QuickBite was founded with a simple mission: to connect food lovers with their favorite local restaurants. We believe that great food should be accessible to everyone—whether you're craving pizza on a relaxing night or need a quick lunch during a busy workday.</p>
-                    <p>What started as a small project has grown into a platform that serves thousands of customers daily. We’re proud to work with the best restaurants in town, bringing you diverse cuisines and exceptional dining experiences right to your door.</p>
-                    <p>Our commitment is to provide fast, reliable service while supporting local businesses. Every order you place helps restaurants thrive and communities grow stronger.</p>
-                </div>
-            </section>
+    <!-- Miért válaszd szekció -->
+    <section class="why-choose-section container">
+        <h2 class="section-title">Miért válaszd a QuickBite-ot?</h2>
+        <div class="benefits">
+            <div class="benefit-card">
+                <div class="benefit-icon">⏱️</div>
+                <h3>Gyors kiszállítás</h3>
+                <p>Ételed forrón és frissen érkezik 30–45 percen belül</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🔒</div>
+                <h3>Biztonságos fizetés</h3>
+                <p>Fizetési adataidat iparági szintű biztonság védi</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🍽️</div>
+                <h3>Kiváló minőségű ételek</h3>
+                <p>A legjobb éttermekkel dolgozunk együtt, hogy mindig finomat ehess</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">📦</div>
+                <h3>Valós idejű nyomkövetés</h3>
+                <p>Kövesd a rendelésedet, és mindig tudd, hol jár az ételed</p>
+            </div>
+        </div>
+        <div class="stats-container">
+            <div class="stat-item">
+                <span class="stat-number">50+</span>
+                <span class="stat-text">Partner étterem</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10k+</span>
+                <span class="stat-text">Elégedett vásárló</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">4.8</span>
+                <span class="stat-text">Átlagos értékelés</span>
+            </div>
+        </div>
+    </section>
 
-            <section class="why-choose-section container">
-                <h2 class="section-title">Why Choose QuickBite</h2>
-                <div class="benefits">
-                    <div class="benefit-card">
-                        <div class="benefit-icon">⏱️</div>
-                        <h3>Fast Delivery</h3>
-                        <p>Get your food delivered hot and fresh in 30-45 minutes</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🔒</div>
-                        <h3>Safe & Secure</h3>
-                        <p>Your payment information is protected with industry-leading security</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">🍽️</div>
-                        <h3>Quality Food</h3>
-                        <p>We partner with the best restaurants to bring you delicious meals</p>
-                    </div>
-                    <div class="benefit-card">
-                        <div class="benefit-icon">📦</div>
-                        <h3>Real-time Tracking</h3>
-                        <p>Track orders so you always know where your food is</p>
-                    </div>
-                </div>
-                <div class="stats-container">
-                    <div class="stat-item">
-                        <span class="stat-number">50+</span>
-                        <span class="stat-text">Partner Restaurants</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">10k+</span>
-                        <span class="stat-text">Happy Customers</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number">4.8</span>
-                        <span class="stat-text">Average Rating</span>
-                    </div>
-                </div>
-            </section>
+    <!-- Vásárlói vélemények -->
+    <section class="reviews-section">
+        <h2>Vásárlóink véleményei</h2>
+        <div class="reviews-container">
+            <div class="review-card"><div class="review-username">@Anna93</div><div class="review-text">Mindig gyorsan megérkezik a rendelés, és az étel még meleg! Imádom a QuickBite-ot!</div></div>
+            <div class="review-card"><div class="review-username">@Tomi_Eats</div><div class="review-text">Nagyon egyszerű használni az oldalt, és a futárok is kedvesek.</div></div>
+            <div class="review-card"><div class="review-username">@KataFoodie</div><div class="review-text">A kedvenc sushi éttermem is fent van, szuper, hogy házhoz hozzák!</div></div>
+            <div class="review-card"><div class="review-username">@Balazs88</div><div class="review-text">Pontosan érkezett a rendelés, megbízható szolgáltatás.</div></div>
+            <div class="review-card"><div class="review-username">@Lilla</div><div class="review-text">Már többször rendeltem, és mindig elégedett voltam. Csak ajánlani tudom!</div></div>
+            <div class="review-card"><div class="review-username">@DanielK</div><div class="review-text">A nyomkövetés funkció nagyon hasznos, mindig tudom, mikor érkezik az étel.</div></div>
+            <div class="review-card"><div class="review-username">@Eszti</div><div class="review-text">Tetszik, hogy rengeteg étterem közül lehet választani, és gyors a kiszállítás.</div></div>
+            <div class="review-card"><div class="review-username">@Marci</div><div class="review-text">A pizzám forrón érkezett! Ennél nem is kell több.</div></div>
+            <div class="review-card"><div class="review-username">@PetraB</div><div class="review-text">Nagyon átlátható az oldal, könnyű rendelni.</div></div>
+            <div class="review-card"><div class="review-username">@Zsolt12</div><div class="review-text">A kedvenc hamburgerezőm is rajtuk keresztül szállít. 10/10!</div></div>
+            <div class="review-card"><div class="review-username">@Vivien</div><div class="review-text">Mindig udvarias futárok, sosem csalódtam bennük.</div></div>
+            <div class="review-card"><div class="review-username">@Andras</div><div class="review-text">Kiváló ügyfélszolgálat! Gyorsan reagáltak egy problémára.</div></div>
+            <div class="review-card"><div class="review-username">@Laura</div><div class="review-text">Nagyon szeretem, hogy helyi éttermeket is támogatnak.</div></div>
+            <div class="review-card"><div class="review-username">@Milan</div><div class="review-text">Megbízható, pontos, és finom ételek – mit akarhatnék még?</div></div>
+            <div class="review-card"><div class="review-username">@Reka</div><div class="review-text">A kedvenc levesem is elérhető lett, azóta csak innen rendelek!</div></div>
+            <div class="review-card"><div class="review-username">@Norbi</div><div class="review-text">Tényleg 30 percen belül kiszállították! Nagyon elégedett vagyok.</div></div>
+            <div class="review-card"><div class="review-username">@Zita</div><div class="review-text">Szép dizájn, könnyű navigáció és gyors kiszállítás – imádom!</div></div>
+        </div>
+    </section>
 
-    <!-- Footer -->
+    <!-- Lábléc -->
     <footer>
         <div class="footer-content">
             <div class="footer-section">
@@ -121,6 +146,5 @@
 
     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="assets/js/index.js"></script>
-
 </body>
 </html>
